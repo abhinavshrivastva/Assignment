@@ -80,7 +80,7 @@ In summary, FastText's architecture and training methodology, combined with its 
 Remarkably, the model achieved an impressive accuracy of approximately 98.14%, indicating its ability to correctly classify text data. 
 
 
-##Conclusion :
+## Conclusion :
 
 In conclusion, FastText is a powerful text classification model, particularly suitable for languages with complex morphological structures like Hindi. Its rich subword embeddings and extensive training on massive corpora make it a robust choice for a wide range of NLP tasks. 
 
@@ -88,7 +88,7 @@ However, when comparing FastText with CNN, there are certain advantages to using
 
 Moreover, FastText models can be relatively large, often exceeding 6GB in size, making them less efficient for deployment in resource-constrained environments. Ultimately, the choice between FastText and CNN depends on the specific requirements and constraints of the task at hand.
 
-##Future Work  :
+## Future Work  :
 
 Future work in the domain of NSFW (Not Safe For Work) text detection presents exciting opportunities for further research and model development. Building upon the foundation of extensive training data, it's possible to create a BERT-like model that excels at understanding the nuances of NSFW and non-NSFW content in text. The core idea would be to leverage a massive corpus of NSFW and non-NSFW text, encompassing a wide range of languages and contexts, to train a model with an even deeper understanding of what constitutes inappropriate or sensitive content. This model could be designed to recognize subtle or context-dependent variations in NSFW text, providing a higher level of accuracy in classification.
 
