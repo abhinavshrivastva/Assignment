@@ -1,11 +1,11 @@
-Introduction - 
+## Introduction - 
 The dataset contains of 30k Hindi sentences which may or may not be NSFW. The dataset is balanced with nearly half of examples as NSFW. 
 For Example,
 
 मुझे आंटी की बातों का मर्म ये समझ में आया कि इस सब गुस्से की वजह रात को अंकल ज्यादा देर तक आंटी की चुदाई नहीं कर पाते हैं और आंटी को शांत नहीं कर पाते हैं - 1
 सब तुम्हारी वजह से - 0
 
-Data Preprocesing-
+## Data Preprocesing-
 
 Installed the Pandas library and imported it. Read a CSV file ('30k_sample.csv') into a Pandas DataFrame and displayed the initial rows. Removed sentences with only spaces to clean the DataFrame. Eliminated emojis from the 'sentence' column using a regex-based 'remove_emojis' function. Displayed the initial rows of the DataFrame after emoji removal.Utilized the Pandas library and TensorFlow's Keras preprocessing tools to tokenize a dataset. The dataset, named 'data,' was used to create tokenized sentences and corresponding labels. A Tokenizer was initialized to process the text data. For each sentence, whitespace-separated words were tokenized, and the Tokenizer was updated with these tokenized sentences. The result was a new DataFrame called 'tokenized_data' with tokenized sentences and labels. The final DataFrame had the number of rows and columns displayed, with the first five rows also shown. This process allowed text data to be converted into a format suitable for machine learning applications.
 
