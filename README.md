@@ -17,7 +17,7 @@ The vectorization process converts text data into numerical features suitable fo
 
 Once the data was vectorized, a Logistic Regression model was applied to the training data ('X_train_vectorized' and 'y_train') as a starting point. The model was trained to predict the 'label' (0 or 1) based on the vectorized text data.Accuracy was calculated to evaluate the model's performance on the test data with a decent starting score of 71%.
 
-* Naive Bayes:
+### Naive Bayes:
 
 The Naive Bayes classifier, in this case, a Binomial Naive Bayes, was applied using a pipeline that included Count Vectorization. The model was trained on the same dataset used earlier, where 'sentence' is the text data, and 'label' is the binary classification label.
 
@@ -25,7 +25,7 @@ However, the performance of the Binomial Naive Bayes model did not perform as we
 
 This lower accuracy may be attributed to the assumptions of Naive Bayes, particularly its independence assumptions. In text classification tasks, where the order and relationships between words can be crucial, Naive Bayes may struggle to capture the intricacies of the data compared to Logistic Regression. The choice of classifier can greatly impact model performance, and in this case, Logistic Regression outperformed Naive Bayes for the given text classification task.
 
-* XGBoost :
+### XGBoost :
 
 The XGBoost classifier was employed to handle text classification tasks using the 'sentence' column for text data and the 'label' column for labels. The dataset was split into training and testing sets, just as in previous tasks, with 80% for training and 20% for testing.
 
@@ -35,7 +35,7 @@ Subsequently, an XGBoost classifier was utilized for training the model on the T
 
 The XGBoost model achieved an accuracy of approximately 69.53%, which is an improvement over the Multinomial Naive Bayes model but still lower than the Logistic Regression model. This demonstrates that XGBoost, a gradient boosting algorithm, can provide better predictive performance for text classification tasks compared to Naive Bayes but may still be outperformed by simpler models like Logistic Regression in some cases.
 
-* Decision Tree:
+### Decision Tree:
 
 A Decision Tree Classifier was utilized for text classification tasks, similar to the previous models. The dataset was split into training and testing sets, with an 80% training and 20% testing split, just as before.
 
@@ -44,7 +44,7 @@ A pipeline was created to include TF-IDF Vectorization and the Decision Tree Cla
 The performance of the Decision Tree Classifier was evaluated, and it achieved an accuracy of approximately 63.33%. This accuracy is consistent with the performance of the Multinomial Naive Bayes model, but it remains lower than the Logistic Regression and XGBoost models for the given text classification task.
 
 
-*  CNN :
+###  CNN :
 
 In this text classification task, a Convolutional Neural Network (CNN) model was employed to effectively handle the data. CNNs are suitable when the local order of words is not crucial for text classification, as they can detect specific features within the text.
 
@@ -61,7 +61,7 @@ The model's deep architecture allows it to learn complex relationships between w
 
 In summary, the CNN model's impressive performance showcases its effectiveness in text classification when the local order of words is not a critical factor, as demonstrated by the high accuracy of 98.73%.
 
-* Transformer Architecture of Facebook Model FastText:
+### Transformer Architecture of Facebook Model FastText:
 
 FastText is a popular text classification and representation learning model developed by Facebook AI Research. It's known for its efficiency, scalability, and ability to handle languages with rich morphological structures like Hindi. Here are some key aspects of FastText:
 
@@ -80,7 +80,7 @@ In summary, FastText's architecture and training methodology, combined with its 
 Remarkably, the model achieved an impressive accuracy of approximately 98.14%, indicating its ability to correctly classify text data. 
 
 
-Conclusion :
+##Conclusion :
 
 In conclusion, FastText is a powerful text classification model, particularly suitable for languages with complex morphological structures like Hindi. Its rich subword embeddings and extensive training on massive corpora make it a robust choice for a wide range of NLP tasks. 
 
@@ -88,7 +88,7 @@ However, when comparing FastText with CNN, there are certain advantages to using
 
 Moreover, FastText models can be relatively large, often exceeding 6GB in size, making them less efficient for deployment in resource-constrained environments. Ultimately, the choice between FastText and CNN depends on the specific requirements and constraints of the task at hand.
 
-Future Work  :
+##Future Work  :
 
 Future work in the domain of NSFW (Not Safe For Work) text detection presents exciting opportunities for further research and model development. Building upon the foundation of extensive training data, it's possible to create a BERT-like model that excels at understanding the nuances of NSFW and non-NSFW content in text. The core idea would be to leverage a massive corpus of NSFW and non-NSFW text, encompassing a wide range of languages and contexts, to train a model with an even deeper understanding of what constitutes inappropriate or sensitive content. This model could be designed to recognize subtle or context-dependent variations in NSFW text, providing a higher level of accuracy in classification.
 
